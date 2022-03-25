@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
+import Cart from "../Cart/Cart";
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -11,16 +12,18 @@ const Products = () => {
     }, []);
     return (
         <div>
-            <div className="row">
-                <div className="col-md-9">
+            <div className="row gap-3 mb-3">
+                <div className="col-md-8">
                     <div className="row">
                         {products.map((product) => (
                             <Card key={product.id} product={product} />
                         ))}
                     </div>
                 </div>
+                <div className="col-md-3 bg-info rounded-3">
+                    <Cart/>
+                </div>
             </div>
-            <div className="col md-2"></div>
         </div>
     );
 };
