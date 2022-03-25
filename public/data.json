@@ -1,55 +1,55 @@
 [
     {
         "id": 1,
-        "picture": "https://www.shutterstock.com/image-photo/jakarta-indonesia-saturday-21-december-2019-1639572865",
+        "picture": "./images/apple.jpg",
         "price": 80000,
-        "name": "MacBook"
+        "name": "Apple"
     },
     {
         "id": 2,
-        "picture": "https://www.shutterstock.com/image-photo/jakarta-indonesia-monday-may-11-2020-1728125350",
+        "picture": "./images/samsung.jpg",
         "price": 55000,
         "name": "Samsung"
     },
     {
         "id": 3,
-        "picture": "https://www.shutterstock.com/image-photo/ho-chi-minh-city-vietnam-jun-1106477300",
+        "picture": "./images/hp.jpg",
         "price": 65000,
         "name": "HP"
     },
     {
         "id": 4,
-        "picture": "https://www.shutterstock.com/image-photo/jakartaindonesia-wednesday-14-august-2019-black-1791315848",
+        "picture": "./images/lenovo.jpg",
         "price": 70000,
         "name": "Lenovo"
     },
     {
         "id": 5,
-        "picture": "https://www.shutterstock.com/image-photo/kota-kinabalu-sabah-malaysia-feb-12-1311152021",
+        "picture": "./images/acer.jpg",
         "price": 40000,
         "name": "Acer"
     },
     {
         "id": 6,
-        "picture": "https://www.shutterstock.com/image-photo/jakartaindonesiafriday-28-march-2020-laptop-dell-1689177769",
+        "picture": "./images/dell.jpg",
         "price": 45000,
         "name": "Dell"
     },
     {
         "id": 7,
-        "picture": "https://www.shutterstock.com/image-photo/bangkok-thailand-huawei-launch-new-notebook-2069355032",
+        "picture": "./images/walton.jpg",
         "price": 30000,
-        "name": "Huawei"
+        "name": "Walton"
     },
     {
         "id": 8,
-        "picture": "https://www.shutterstock.com/image-photo/jakarta-monday-gaming-computer-msi-laptop-1553140028",
-        "price": 35000,
+        "picture": "./images/msi.jpg",
+        "price": 75000,
         "name": "MSI"
     },
     {
         "id": 9,
-        "picture": "https://www.shutterstock.com/image-photo/jakarta-indonesiafriday-28-march-2020-laptop-1685814550",
+        "picture": "./images/asus.jpg",
         "price": 60000,
         "name": "Asus"
     }
