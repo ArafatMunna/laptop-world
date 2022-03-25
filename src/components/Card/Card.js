@@ -1,7 +1,7 @@
 import React from "react";
 import { BsFillCartFill } from "react-icons/bs";
 
-const Card = ({ product }) => {
+const Card = ({ product, addToCart }) => {
     const { name, picture, price } = product;
     return (
         <div className="col-12 col-md-4 border border-info border-3 rounded-3 p-3">
@@ -13,7 +13,10 @@ const Card = ({ product }) => {
                 <h3>Price: ${price}</h3>
             </div>
             <div>
-                <button className="w-100 border-0 p-2 bg-info rounded text-white">
+                <button
+                    onClick={() => addToCart(product)}
+                    className="w-100 border-0 p-2 bg-info rounded text-white fw-bold"
+                >
                     Add to Cart
                     <BsFillCartFill className="ms-2 fs-5" />
                 </button>

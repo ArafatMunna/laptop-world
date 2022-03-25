@@ -4,24 +4,37 @@ import Cart from "../Cart/Cart";
 
 const Products = () => {
     const [products, setProducts] = useState([]);
+    const [carts, setCarts] = useState([]);
 
     useEffect(() => {
         fetch("data.json")
             .then((res) => res.json())
             .then((data) => setProducts(data));
     }, []);
+
+    const addToCart = (product) => {
+        const newCart = [...carts, product];
+        setCarts(newCart);
+    };
     return (
-        <div>
-            <div className="row gap-3 mb-3">
-                <div className="col-md-8">
-                    <div className="row">
-                        {products.map((product) => (
-                            <Card key={product.id} product={product} />
-                        ))}
-                    </div>
+        <div className="row gap-5 mb-3">
+            <div className="col-md-8 p-0">
+                <div className="row">
+                    {products.map((product) => (
+                        <Card
+                            key={product.id}
+                            product={product}
+                            addToCart={addToCart}
+                        />
+                    ))}
                 </div>
-                <div className="col-md-3 bg-info rounded-3">
-                    <Cart/>
+            </div>
+            <div className="col-md-3 bg-info rounded-3">
+                <div className="mt-4">
+                    <h3 className="text-center">Selected Products</h3>
+                    {carts.map((cart) => (
+                        <Cart key={cart.id} cart={cart} />
+                    ))}
                 </div>
             </div>
         </div>
