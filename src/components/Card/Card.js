@@ -1,10 +1,11 @@
 import React from "react";
 import { BsFillCartFill } from "react-icons/bs";
+import "./Card.css";
 
 const Card = ({ product, addToCart }) => {
     const { name, picture, price } = product;
     return (
-        <div className="col-12 col-md-4 border border-primary border-3 rounded-3 p-3">
+        <div className="border border-2 border-primary p-3 shadow-lg">
             <div>
                 <img className="img-fluid" src={picture} alt="" />
             </div>

@@ -1,0 +1,21 @@
+.products-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 0 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+    .card-container {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+        order: 2;
+    }
+}
