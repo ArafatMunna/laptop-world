@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "picture": "https://www.shutterstock.com/image-photo/macbook-pro-m1-15inch-apple-retina-1996850003",
+        "price": 80000,
+        "name": "MacBook"
+    },
+    {
+        "id": 2,
+        "picture": "https://www.shutterstock.com/image-photo/modern-laptop-computer-blank-screen-on-1923641213",
+        "price": 55000,
+        "name": "Samsung"
+    },
+    {
+        "id": 3,
+        "picture": "https://www.shutterstock.com/image-photo/modern-laptop-computer-blank-screen-on-1923641213",
+        "price": 65000,
+        "name": "HP"
+    },
+    {
+        "id": 4,
+        "picture": "https://www.shutterstock.com/image-photo/modern-laptop-computer-blank-screen-on-1923641213",
+        "price": 70000,
+        "name": "Lenovo"
+    },
+    {
+        "id": 5,
+        "picture": "https://www.shutterstock.com/image-photo/modern-laptop-computer-blank-screen-on-1923641213",
+        "price": 40000,
+        "name": "Acer"
+    },
+    {
+        "id": 6,
+        "picture": "https://www.shutterstock.com/image-photo/modern-laptop-computer-blank-screen-on-1923641213",
+        "price": 45000,
+        "name": "Dell"
+    },
+    {
+        "id": 7,
+        "picture": "https://www.shutterstock.com/image-photo/modern-laptop-computer-blank-screen-on-1923641213",
+        "price": 30000,
+        "name": "Walton"
+    },
+    {
+        "id": 8,
+        "picture": "https://www.shutterstock.com/image-photo/modern-laptop-computer-blank-screen-on-1923641213",
+        "price": 35000,
+        "name": "Compaq"
+    },
+    {
+        "id": 9,
+        "picture": "https://www.shutterstock.com/image-photo/modern-laptop-computer-blank-screen-on-1923641213",
+        "price": 60000,
+        "name": "Asus"
+    }
+]
