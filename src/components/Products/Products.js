@@ -16,6 +16,16 @@ const Products = () => {
         const newCart = [...carts, product];
         setCarts(newCart);
     };
+
+    const chooseOneRandomly = (carts) => {
+        console.log(carts);
+        // carts.map((cart) => console.log(cart));
+    };
+
+    const reset = () => {
+        setCarts([]);
+    };
+
     return (
         <div className="row gap-5 mb-3">
             <div className="col-md-8 p-0">
@@ -35,6 +45,20 @@ const Products = () => {
                     {carts.map((cart) => (
                         <Cart key={cart.id} cart={cart} />
                     ))}
+                    <button
+                        onClick={chooseOneRandomly}
+                        className="border-0 mt-3 bg-success text-white p-2 fw-bold"
+                    >
+                        Choose one for me
+                    </button>
+                    <div>
+                        <button
+                            onClick={reset}
+                            className="border-0 my-3 bg-danger text-white p-2 fw-bold"
+                        >
+                            Reset
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

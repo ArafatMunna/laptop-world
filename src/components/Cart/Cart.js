@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Cart = ({cart}) => {
-    console.log(cart);
+    // console.log(cart);
     const {picture, name} = cart;
     return (
         <div className='d-flex justify-content-start my-3'>
