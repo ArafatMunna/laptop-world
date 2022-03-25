@@ -12,15 +12,16 @@ const Products = () => {
             .then((data) => setProducts(data));
     }, []);
 
+    // Add to cart button event handle
     const addToCart = (product) => {
         const newCart = [...carts, product];
         setCarts(newCart);
     };
 
-    const chooseOneRandomly = () => {
-        carts.map((cart) => console.log(cart));
-    };
+    // Choose one randomly button event handle
+    const chooseOneRandomly = () => {};
 
+    // Reset button event handle
     const reset = () => {
         setCarts([]);
     };
