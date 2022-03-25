@@ -17,9 +17,8 @@ const Products = () => {
         setCarts(newCart);
     };
 
-    const chooseOneRandomly = (carts) => {
-        console.log(carts);
-        // carts.map((cart) => console.log(cart));
+    const chooseOneRandomly = () => {
+        carts.map((cart) => console.log(cart));
     };
 
     const reset = () => {
