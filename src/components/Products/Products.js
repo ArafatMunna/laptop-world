@@ -16,8 +16,13 @@ const Products = () => {
 
     // Add to cart button event handle
     const addToCart = (product) => {
-        const newCart = [...carts, product];
-        setCarts(newCart);
+        if (carts.length > 3) {
+            alert("Can't add more than 4 products");
+        } else {
+            const newCart = [...carts, product];
+            setCarts(newCart);
+        }
+        // console.log(carts.length);
     };
 
     // Choose one randomly button event handle
