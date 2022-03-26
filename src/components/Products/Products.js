@@ -22,8 +22,11 @@ const Products = () => {
 
     // Choose one randomly button event handle
     const chooseOneRandomly = () => {
-        const randomNumber = Math.floor(Math.random() * carts.length);
-        setRandomNumber(randomNumber);
+        if (carts.length > 0) {
+            const randomNumber = Math.floor(Math.random() * carts.length);
+            setRandomNumber(randomNumber);
+        }
+        console.log(randomNumber);
     };
 
     // Reset button event handle
