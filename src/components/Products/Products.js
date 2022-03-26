@@ -26,12 +26,13 @@ const Products = () => {
             const randomNumber = Math.floor(Math.random() * carts.length);
             setRandomNumber(randomNumber);
         }
-        console.log(randomNumber);
+        // console.log(randomNumber);
     };
 
     // Reset button event handle
     const reset = () => {
         setCarts([]);
+        setRandomNumber("");
     };
 
     return (
