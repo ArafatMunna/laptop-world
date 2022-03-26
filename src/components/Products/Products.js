@@ -19,8 +19,13 @@ const Products = () => {
         if (carts.length > 3) {
             alert("Can't add more than 4 products");
         } else {
-            const newCart = [...carts, product];
-            setCarts(newCart);
+            const addedCard = carts.find((cart) => cart.id === product.id);
+            if (addedCard) {
+                alert("This product is already added");
+            } else {
+                const newCart = [...carts, product];
+                setCarts(newCart);
+            }
         }
         // console.log(carts.length);
     };
